@@ -1,0 +1,5 @@
+declare type Breakpoint = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+declare type GridBreakpoint = Breakpoint | Breakpoint[];
+declare type GridClasses = {
+  [key: string]: boolean;
+};

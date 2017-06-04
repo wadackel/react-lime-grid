@@ -1,0 +1,94 @@
+{
+  "name": "react-lime-grid",
+  "version": "0.0.1",
+  "description": "lime-grid.css for React.js",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:clean && npm run build:js && npm run build:flow-gen",
+    "build:clean": "rimraf lib",
+    "build:js": "babel src/ -d lib/ --ignore \"**/__tests__/*\"",
+    "build:flow-gen": "flow gen-flow-files src/index.js --out-dir lib",
+    "test": "npm run test:lint && npm run test:typecheck && npm run test:unit",
+    "test:watch": "npm run test:unit -- --watch",
+    "test:lint": "eslint \"src/**/*.js\" \"docs/webpack.config.js\" \"docs/src/**/*.js\"",
+    "test:typecheck": "flow",
+    "test:unit": "jest \"src/.*/\"",
+    "docs": "webpack-dev-server --config docs/webpack.config.dev.js",
+    "docs:build": "webpack -p --config docs/webpack.config.prod.js",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsuyoshiwada/react-lime-grid.git"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "layout",
+    "grid",
+    "flex",
+    "flexbox",
+    "lime-grid"
+  ],
+  "author": "tsuyoshiwada",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tsuyoshiwada/react-lime-grid/issues"
+  },
+  "homepage": "https://github.com/tsuyoshiwada/react-lime-grid#readme",
+  "files": [
+    "lib",
+    "test"
+  ],
+  "peerDependencies": {
+    "lime-grid.css": ">=0.1.0",
+    "react": ">=15.3.0",
+    "react-dom": ">=15.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^20.0.3",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "enzyme": "^2.8.2",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-flowtype": "^2.34.0",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jest": "^20.0.3",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1",
+    "flow-bin": "^0.47.0",
+    "jest": "^20.0.4",
+    "lime-grid.css": "^0.1.0",
+    "normalize.css": "^7.0.0",
+    "postcss-cssnext": "^2.11.0",
+    "postcss-import": "^10.0.0",
+    "postcss-loader": "^2.0.5",
+    "react": "^15.5.4",
+    "react-addons-test-utils": "^15.5.1",
+    "react-dom": "^15.5.4",
+    "react-hot-loader": "next",
+    "react-prism": "^4.1.0",
+    "react-test-renderer": "^15.5.4",
+    "rimraf": "^2.6.1",
+    "style-loader": "^0.18.1",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "prop-types": "^15.5.10"
+  },
+  "jest": {
+    "rootDir": "src",
+    "testMatch": [
+      "**/?(*.)test.js"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+
+{
+  "presets": [
+    "flow",
+    "env",
+    "react",
+    "stage-1"
+  ],
+  "plugins": [
+    "react-hot-loader/babel"
+  ]
+}

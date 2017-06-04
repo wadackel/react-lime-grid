@@ -1,0 +1,17 @@
+.root {
+  padding: 1em 0;
+  background: #f7f7f7;
+  text-align: center;
+}
+
+.depth2 {
+  background: #ececec;
+}
+
+.depth3 {
+  background: #e2e2e2;
+}
+
+.lg {
+  height: 5em;
+}
