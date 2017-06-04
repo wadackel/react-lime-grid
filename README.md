@@ -29,14 +29,14 @@ https://tsuyoshiwada.github.io/react-lime-grid/
 
 ## Install
 
-To install the stable version.
+Install [lime-grid.css](https://github.com/tsuyoshiwada/lime-grid.css) and `react-lime-grid`.
 
 ```bash
-$ npm install react-lime-grid --save
+$ npm install lime-grid.css react-lime-grid --save
 
 # or
 
-$ yarn add react-lime-grid
+$ yarn add lime-grid.css react-lime-grid
 ```
 
 
