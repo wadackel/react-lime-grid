@@ -2,7 +2,7 @@
   "name": "react-lime-grid",
   "version": "0.0.1",
   "description": "lime-grid.css for React.js",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "npm run build:clean && npm run build:js && npm run build:flow-gen",
     "build:clean": "rimraf lib",
